@@ -1,0 +1,94 @@
+:root {
+  --black: #121212;
+  --red: #f73d93;
+  --weight: 500;
+}
+button,
+a,
+input {
+  text-transform: capitalize;
+  color: white;
+}
+body {
+  font-family: "Chakra Petch", sans-serif !important;
+  background-color: var(--black) !important;
+  color: white !important;
+  text-transform: capitalize;
+}
+.title h1 {
+  color: var(--red);
+  font-weight: bolder;
+}
+.form .search {
+  margin: 0;
+  width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 780px) {
+  .form .search {
+    max-width: 400px;
+  }
+}
+@media (max-width: 580px) {
+  .form .search {
+    width: 100%;
+  }
+}
+.form .search input {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f73d9410;
+  border-bottom: 2px solid var(--red);
+  color: white;
+  font-weight: var(--weight);
+}
+.form .search input::placeholder {
+  font-weight: var(--weight);
+
+  color: white;
+}
+.form .search input:focus {
+  outline: none;
+}
+.form .search button {
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: var(--red);
+  font-weight: var(--weight);
+  transition: 0.3s;
+  border: none;
+}
+.form .search button:hover {
+  box-shadow: white 7px 7px 0;
+}
+.movies .movie .img img {
+  height: 350px;
+  width: 100%;
+}
+.movies .movie .img {
+  height: 350px;
+  width: 100%;
+}
+.movies .movie ul {
+  padding: 10px 20px;
+  font-size: 17px;
+  color: rgb(204, 204, 204);
+}
+.movies .movie ul li span {
+  font-weight: 600;
+  color: white !important;
+}
+.error p {
+  color: red;
+}
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+::-webkit-scrollbar-track {
+  background: var(--black) !important;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red) !important;
+}
